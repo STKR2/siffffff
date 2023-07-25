@@ -29,10 +29,8 @@
 
 <b>9 - Run the file :</b> <code>screen -S quran python3.9 quran.py</code>
 
-# Get Help :
+## Get Help :
 
-# If you got an issue with deploy or you need to help :
-
-**- You can contact with the developer : [@DevZaid](https://t.me/DevZaid)**
-**- Join To [Our Channel](https://t.me/Y88F8) for more projects**
-**- Join To [Support Group](https://t.me/PythonProjectsChat) for questions**
+#**- You can contact with the developer : [@DevZaid](https://t.me/DevZaid)**
+#**- Join To [Our Channel](https://t.me/Y88F8) for more projects**
+#**- Join To [Support Group](https://t.me/PythonProjectsChat) for questions**
