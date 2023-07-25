@@ -31,8 +31,8 @@
 
 ## Get Help :
 
-#**- You can contact with the developer : [@DevZaid](https://t.me/DevZaid)**
+**- You can contact with the developer : [@DevZaid](https://t.me/DevZaid)**
 
-#**- Join To [Our Channel](https://t.me/Y88F8) for more projects**
+**- Join To [Our Channel](https://t.me/Y88F8) for more projects**
 
-#**- Join To [Support Group](https://t.me/PythonProjectsChat) for questions**
+**- Join To [Support Group](https://t.me/PythonProjectsChat) for questions**
