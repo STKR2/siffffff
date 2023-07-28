@@ -6,7 +6,7 @@ from pytgcalls.types import AudioPiped
 from pyrogram.raw.functions.channels import GetFullChannel
 from pyrogram.raw.functions.phone import EditGroupCallTitle
 
-import asyncio, json, pytgcalls
+import asyncio, json, pytgcalls, random
 
 from config import *
 
@@ -18,7 +18,10 @@ app = Client(
 )
 call = PyTgCalls(app)
 
-quran = json.loads(open("./quran.json", "r").read())
+
+with open("./quran.json", "r") as f:
+    quran = json.loads(f.read())["s"]
+
 already = []
 
 async def Call():
@@ -28,12 +31,13 @@ async def Call():
             already.clear()
         if already:
             surah = quran[already.index(already[-1]) + 1]
-            surah_name = "سورة " + surah["name_translations"]["ar"]
-            surah_url = surah["recitation"]
         else:
             surah = quran[0]
-            surah_name = "سورة " + surah["name_translations"]["ar"]
-            surah_url = surah["recitation"]
+        surah_sound = random.choice(surah["sounds"])
+        sound_name = surah_sound["name"]
+        sound_url = surah_sound["url"]
+        surah_name = surah["surah"]
+        title = f"{surah_name} | {sound_name}"
         try:
                     getGroupCall = await call.get_active_call(CHAT_ID)
                     if not getGroupCall.is_playing:
@@ -47,16 +51,16 @@ async def Call():
                     if not CHANNEL_USERNAMWE:
                         await call.join_group_call(
                             CHAT_ID,
-                            AudioPiped(surah_url),
+                            AudioPiped(sound_url),
                         )
                     else:
                         await call.join_group_call(
                             CHAT_ID,
-                            AudioPiped(surah_url),
+                            AudioPiped(sound_url),
                             join_as=await app.resolve_peer(CHANNEL_USERNAMWE)
                         )
                     channel = await app.invoke(GetFullChannel(channel=await app.resolve_peer(CHAT_ID)))
-                    data = EditGroupCallTitle(call=channel.full_chat.call, title="مشاري راشد العفاسي | "+surah_name)
+                    data = EditGroupCallTitle(call=channel.full_chat.call, title=title)
                     await app.invoke(data)
                     already.append(surah)
         except pytgcalls.exceptions.AlreadyJoinedError:
