@@ -1,7 +1,7 @@
 import os
 
 API_ID = int(os.getenv("API_ID", "8934899"))
-CHAT_ID = int(os.getenv("CHAT_ID", "-1001954554405"))
+CHAT_ID = int(os.getenv("CHAT_ID", "-1002074499578"))
 CHANNEL_USERNAMWE = os.getenv("CHANNEL_USERNAMWE", "")
 API_HASH = os.getenv("API_HASH", "bf3e98d2c351e4ad06946b4897374a1e")
-SESSION_STRING = os.getenv("SESSION_STRING", "BAA-7SxUyFIu5z7E0hlGtNJx5N47tzzAeVlLMNRw4O0UwM9pidvbqo-fVBIeMhkTB6sKiIgig3N0G4uTpdBEOEegk7GhRwqkXmju6w2BLIA1Q8bYOvHhZ8RhmplXHg16L7qAtOfkHvpcaXiSr6JPcXbL14BlC-9EAaXtorgz5BW9OgRmWKm801bZP8ZDQrHLHb6KSlEdFbK1TK15pB6pH76gVlsgVU-7eb6vqriwbiIpglQkR3cGF23n5IzzACyXrwhr95fUeuPosClWBXaN_JVo4nifIYAje1jwAkukORKVUs4_3zsLUTNY5u7vYFu1nbHw3yIDje5X_gaEJljvPsVJAAAAAXo_LJYA") # To Extract string_session just run "String.py"
+SESSION_STRING = os.getenv("SESSION_STRING", "BAAyawkzh01R1KBylubuhX-7ueQjIEjnfDn10y8Kc0sUaz9yZk8sl1bT8xHcvsxydbSglyzU6fZEAdyktUmzsfbMsaMPhyEVCxKFoOguDBP5KGNJuapHUVzvyzxkx5gtQEVlyXcCHNuHmtusG8bY16KoVdcUmKxhSgTj0joi5l_cEAMkSXkwS3hXCQNwdGxhfhnAXLtyeH9TDay6EhmqNEMney-o7anI5eA0C2WBO5_OaSqq_0-8fbjdgPlF9HC1SeyBIUK5nKTPqUHS-0m8BgXkZV0wzw5wd5xElfOp3AJb1yKKx1Xn4x-g32hslSEkjJ4Y5YFJDEG1FiSOOPWO2m-EAAAAAXXf410A") # To Extract string_session just run "String.py"
